@@ -2,8 +2,6 @@ import Head from "next/head";
 import React from "react";
 import NavBar from "./_components/nav-bar";
 import Carousel from "./_components/carousel";
-import Cardpromo from "./_components/card-promo";
-import Carddetails from "./_components/card-details";
 import Benefits from "./_components/benefits";
 import Newsletter from "./_components/newsletter";
 import Highlights from "./_components/highlights";
@@ -36,12 +34,7 @@ function Home() {
             <Highlights></Highlights>
 
             <h2>NOSSOS BENEFÍCIOS</h2>
-            <Benefits></Benefits>
-
-            <Carddetails></Carddetails>
-
-            <h2>PROMOÇÕES</h2>
-            <Cardpromo></Cardpromo>
+            <Benefits></Benefits>         
           </div>
         </div>
         <div>

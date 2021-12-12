@@ -33,7 +33,7 @@ const tutorialSteps = [
 const styles = (theme) => ({
   root: {
     maxWidth: 1900,
-    flexGrow: 1,
+    flexGrow: 2,
   },
   header: {
     display: "flex",
