@@ -5,7 +5,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Form from "./_components/form-checkout";
-import ListItens from "./_components/list-itens-checkout";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -39,9 +38,9 @@ export default function Shoplist() {
             </Typography>
           </Container>
           <h1></h1>
-          <Form></Form>
-          <h2>Lista de produtos</h2>
-          <ListItens></ListItens>
+          <Form></Form> 
+          <br></br>    
+          <br></br>
           <Link href="/orderCompleted">
             <Button variant="contained">Confirmar pagamento</Button>
           </Link>          

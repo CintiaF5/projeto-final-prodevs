@@ -62,7 +62,11 @@ export default function ProductDetails() {
             <Container maxWidth="">
               <Typography
                 component="div"
-                style={{ backgroundColor: "#e9e9e9", height: "15vh", padding: "5px", }}
+                style={{
+                  backgroundColor: "#e9e9e9",
+                  height: "15vh",
+                  padding: "5px",
+                }}
               >
                 <h2 className="title-page2">Detalhes do Produto</h2>
               </Typography>
@@ -104,14 +108,19 @@ export default function ProductDetails() {
                 </Box>
               </CardContent>
               <CardActions>
-                <h4>Adicionar ao carrinho</h4>
-                <ShoppingCartIcon></ShoppingCartIcon>
+                <Button variant="contained">
+                  <ShoppingCartIcon></ShoppingCartIcon>Adicionar ao carrinho
+                </Button>
               </CardActions>
             </Card>
             <Container maxWidth="">
               <Typography
                 component="div"
-                style={{ backgroundColor: "#e9e9e9", height: "80vh", padding: "5px" }}
+                style={{
+                  backgroundColor: "#e9e9e9",
+                  height: "80vh",
+                  padding: "5px",
+                }}
               >
                 <h2 className="title-page2">Descrição do produto</h2>
                 <TabsProductDetails product={product}></TabsProductDetails>

@@ -10,10 +10,11 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import Link from "next/link";
+import { Button } from "@mui/material";
 
 export default function ProductPage(props) {
   const [value, setValue] = React.useState(2);
-  const product = props.product;
+  const product = props.product; 
 
   return (
     <>
@@ -52,11 +53,14 @@ export default function ProductPage(props) {
               />
             </Box>
           </CardContent>
-          <CardActions>
+          <CardActions sx={{ padding: "60px", m: "10px" }}>
             <FavoriteBorderIcon></FavoriteBorderIcon>
             <ZoomInIcon></ZoomInIcon>
             <ShoppingCartIcon></ShoppingCartIcon>
           </CardActions>
+          <Button variant="contained" onClick={() => addToCart(product)}>
+            <ShoppingCartIcon></ShoppingCartIcon>Adicionar ao carrinho
+          </Button>
         </Card>
       </Link>
     </>
