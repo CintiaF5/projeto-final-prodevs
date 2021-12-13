@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import { Button } from '@mui/material';
 
 export default function MultilineTextFields() {
   const [value, setValue] = React.useState("Controlled");
@@ -89,8 +88,7 @@ export default function MultilineTextFields() {
           variant="standard"
           
         />
-      </div>
-      <Button variant="contained">Confirmar pagamento</Button>
+      </div>      
     </Box>
   );
 }

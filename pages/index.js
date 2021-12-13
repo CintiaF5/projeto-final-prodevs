@@ -27,14 +27,14 @@ function Home() {
             </nav>
           </header>
 
-          <div>   
+          <div>
             <Carousel></Carousel>
 
             <h2>DESTAQUES</h2>
             <Highlights></Highlights>
 
             <h2>NOSSOS BENEFÍCIOS</h2>
-            <Benefits></Benefits>         
+            <Benefits></Benefits>
           </div>
         </div>
         <div>
@@ -42,8 +42,8 @@ function Home() {
           <Newsletter></Newsletter>
           <br></br>
           <Link href="/shopList">
-              <Button variant="contained">PROXIMA PAGINA</Button>
-            </Link>
+            <Button variant="contained">PROXIMA PAGINA</Button>
+          </Link>
         </div>
         <footer>
           <InstagramIcon></InstagramIcon>

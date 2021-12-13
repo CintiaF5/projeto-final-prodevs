@@ -16,6 +16,9 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import LoopIcon from "@material-ui/icons/Loop";
 import { useRouter } from "next/router";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 const axios = require("axios");
 
@@ -55,19 +58,16 @@ export default function ProductDetails() {
           </div>
         ) : (
           <>
-            <Link href="/checkout">
-              <Button variant="contained">PROXIMA PAGINA</Button>
-            </Link>
             <CssBaseline />
             <Container maxWidth="">
               <Typography
                 component="div"
-                style={{ backgroundColor: "#e9e9e9", height: "20vh" }}
+                style={{ backgroundColor: "#e9e9e9", height: "15vh", padding: "5px", }}
               >
                 <h2 className="title-page2">Detalhes do Produto</h2>
               </Typography>
             </Container>
-            <Card sx={{ maxWidth: 345, margin: 3 }}>
+            <Card sx={{ maxWidth: 345, margin: 3, padding: "50px", m: "25px" }}>
               <CardMedia
                 component="img"
                 height="140"
@@ -111,14 +111,26 @@ export default function ProductDetails() {
             <Container maxWidth="">
               <Typography
                 component="div"
-                style={{ backgroundColor: "#e9e9e9", height: "50vh" }}
+                style={{ backgroundColor: "#e9e9e9", height: "80vh", padding: "5px" }}
               >
                 <h2 className="title-page2">Descrição do produto</h2>
-                <TabsProductDetails product={product} ></TabsProductDetails>
+                <TabsProductDetails product={product}></TabsProductDetails>
               </Typography>
             </Container>
           </>
         )}
+        <div>
+          <br></br>
+          <Link href="/checkout">
+            <Button variant="contained">PROXIMA PAGINA</Button>
+          </Link>
+          <footer>
+            <InstagramIcon></InstagramIcon>
+            <TwitterIcon></TwitterIcon>
+            <FacebookIcon></FacebookIcon>
+            <br></br>© 2021 CASA DA JOANINHA
+          </footer>
+        </div>
       </div>
     </div>
   );

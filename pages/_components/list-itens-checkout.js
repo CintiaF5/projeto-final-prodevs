@@ -8,7 +8,7 @@ import BeachAccessIcon from "@material-ui/icons/BeachAccess";
 
 export default function FolderList() {
   return (
-    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <List sx={{ maxWidth: 900, margin: 2, px: 8, bgcolor: 'background.paper', my: 2 }} >
       <ListItem>
         <ListItemAvatar>
           <Avatar>

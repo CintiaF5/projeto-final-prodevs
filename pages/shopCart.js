@@ -8,6 +8,9 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import ButtonBase from "@mui/material/ButtonBase";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 const Img = styled("img")({
   margin: "auto",
@@ -28,12 +31,16 @@ export default function Shoplist() {
         </nav>
       </header>
       <div>
-        <React.Fragment>
+        <>
           <CssBaseline />
           <Container maxWidth="">
             <Typography
               component="div"
-              style={{ backgroundColor: "#e9e9e9", height: "30vh" }}
+              style={{
+                backgroundColor: "#e9e9e9",
+                height: "15vh",
+                padding: "5px",
+              }}
             >
               <h2 className="title-page2">Carrinho</h2>
             </Typography>
@@ -76,7 +83,13 @@ export default function Shoplist() {
               </Grid>
             </Grid>
           </Paper>
-        </React.Fragment>
+        </>
+        <footer>
+          <InstagramIcon></InstagramIcon>
+          <TwitterIcon></TwitterIcon>
+          <FacebookIcon></FacebookIcon>
+          <br></br>© 2021 CASA DA JOANINHA
+        </footer>
       </div>
     </div>
   );

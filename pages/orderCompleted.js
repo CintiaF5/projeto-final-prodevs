@@ -7,6 +7,9 @@ import Typography from "@material-ui/core/Typography";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import Stack from "@mui/material/Stack";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 export default function Shoplist() {
   return (
@@ -24,19 +27,31 @@ export default function Shoplist() {
         <Container maxWidth="">
           <Typography
             component="div"
-            style={{ backgroundColor: "#e9e9e9", height: "20vh" }}
+            style={{
+              backgroundColor: "#e9e9e9",
+              height: "15vh",
+              padding: "5px",
+            }}
           >
-            <h2 className="title-page2">Finalizar o pedido</h2>
+            <h2 className="title-page2">Finalizar pedido</h2>
           </Typography>
         </Container>
       </div>
       <div>
-        <Stack sx={{ width: "100%" }} spacing={2}>
+        <Stack sx={{ maxWidth: 1500, margin: 4, px: 70 }}>
           <Alert severity="success">
-            <AlertTitle>Pedido finalizado!</AlertTitle>
-            <strong>Em breve a confirmação chegará no seu e-mail. Obrigado!</strong>
+            <AlertTitle>
+              <strong>Pedido finalizado!</strong>
+            </AlertTitle>
+            Obrigado!
           </Alert>
         </Stack>
+        <footer>
+          <InstagramIcon></InstagramIcon>
+          <TwitterIcon></TwitterIcon>
+          <FacebookIcon></FacebookIcon>
+          <br></br>© 2021 CASA DA JOANINHA
+        </footer>
       </div>
     </div>
   );

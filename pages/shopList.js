@@ -6,6 +6,9 @@ import LoopIcon from "@material-ui/icons/Loop";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 const axios = require("axios");
 
@@ -37,15 +40,15 @@ export default function ShopList() {
         </nav>
       </header>
       <div>
-      <CssBaseline />
-      <Container maxWidth="">
-        <Typography
-          component="div"
-          style={{ backgroundColor: "#e9e9e9", height: "20vh" }}
-        >
-          <h2 className="title-page2">Nossos produtos</h2>
-        </Typography>
-      </Container>
+        <CssBaseline />
+        <Container maxWidth="">
+          <Typography
+            style={{
+              backgroundColor: "#e9e9e9",  height: "15vh",  padding: "5px" }}
+          >
+            <h2 className="title-page2">Nossos produtos</h2>
+          </Typography>
+        </Container>
         {isLoading ? (
           <div className="loading">
             Carregando<LoopIcon></LoopIcon>
@@ -56,7 +59,15 @@ export default function ShopList() {
               return <ProductPage product={product}></ProductPage>;
             })}
           </div>
-        )}
+        )} 
+        <div>
+        <footer>
+          <InstagramIcon></InstagramIcon>
+          <TwitterIcon></TwitterIcon>
+          <FacebookIcon></FacebookIcon>
+          <br></br>© 2021 CASA DA JOANINHA
+        </footer>  
+        </div>       
       </div>
     </div>
   );
